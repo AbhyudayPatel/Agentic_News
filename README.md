@@ -12,7 +12,7 @@ This project is an AI agentic news gather,summarisation and publishing website t
 - **Next.js Frontend**: Optimized for SEO with real-time updates.
 - **City-based Filtering (Upcoming Feature)**: Users can filter news by city.
 
-Video - ![Alt text](https://youtu.be/xuS2gxCtG6g?si=S-9smPQcXEXMMQ6N)
+Video - (https://youtu.be/xuS2gxCtG6g?si=S-9smPQcXEXMMQ6N)
 
 ## Installation
 
