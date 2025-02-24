@@ -3,7 +3,7 @@
 ## Overview
 This project is an AI agentic news gather,summarisation and publishing website that scrapes news articles, summarizes them using Facebook's BART model, and displays them in a user-friendly UI built with Next.js. The backend scrapes data from news websites and stores it in MongoDB, ensuring continuous updates with automated scraping cycles.
 
-![Alt text](https://github.com/PratikChrs/Agentic_News/blob/c3c2d889e96065b60a7c170f3bcbe8f90f235f9f/Frontend/Screenshot%202025-02-24%20224655.png)
+Video - (https://youtu.be/xuS2gxCtG6g?si=S-9smPQcXEXMMQ6N)
 
 ## Features
 - **AI-powered Summarization**: Uses the BART model to generate concise news summaries.
@@ -11,8 +11,6 @@ This project is an AI agentic news gather,summarisation and publishing website t
 - **Automated Scraping**: Fetches news at regular intervals.
 - **Next.js Frontend**: Optimized for SEO with real-time updates.
 - **City-based Filtering (Upcoming Feature)**: Users can filter news by city.
-
-Video - (https://youtu.be/xuS2gxCtG6g?si=S-9smPQcXEXMMQ6N)
 
 ## Installation
 
@@ -37,6 +35,8 @@ MONGO_URI=your_mongodb_connection_string
 ```sh
 npm run dev
 ```
+
+![Alt text](https://github.com/PratikChrs/Agentic_News/blob/c3c2d889e96065b60a7c170f3bcbe8f90f235f9f/Frontend/Screenshot%202025-02-24%20224655.png)
 
 ## Backend (Agent)
 
