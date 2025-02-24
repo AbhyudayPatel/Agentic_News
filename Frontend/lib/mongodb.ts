@@ -9,30 +9,20 @@ const client = new MongoClient(uri);
 
 export async function getNewsData(since?: Date) {
   try {
-    if (!client.connect()) {
-      await client.connect();
-    }
+    await client.connect();
     const database = client.db('news_database');
     const collection = database.collection('news_articles');
     
     const query = since ? { date: { $gt: since } } : {};
+    const news = await collection.find(query).sort({ date: -1 }).toArray();
     
-    const news = await collection.find(query)
-      .sort({ date: -1 })
-      .toArray();
-
-    // Basic validation of required fields
     return news.map(item => ({
       ...item,
       _id: item._id.toString(),
-      date: item.date.toISOString(),
-      image_url: item.image_url || null,
-      heading: item.heading || 'Untitled',
-      article_summary: Array.isArray(item.article_summary) ? item.article_summary : []
+      date: item.date.toISOString()
     }));
-
   } catch (error) {
-    console.error('Error fetching news:', error);
-    return [];
+    console.error('Database error:', error);
+    throw error;
   }
 } 
