@@ -17,7 +17,7 @@ logging.basicConfig(
 class NewsScraperService:
     def __init__(self):
         # MongoDB connection with updated connection string
-        self.client = MongoClient("mongodb+srv://abhyuday2023ug4002:abhyuday@cluster0.q3o87.mongodb.net/news_database?retryWrites=true&w=majority&appName=Cluster0")
+        self.client = MongoClient("enter mongo uri)
         self.db = self.client["news_database"]
         self.news_collection = self.db["news_articles"]
         
