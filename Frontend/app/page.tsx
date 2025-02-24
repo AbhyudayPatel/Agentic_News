@@ -1,8 +1,5 @@
 'use client'
 import { useState, useEffect } from 'react';
-import { getNewsData } from '@/lib/mongodb';
-import NewsContainer from '@/components/NewsContainer';
-import LoadingSkeleton from '@/components/LoadingSkeleton';
 
 interface NewsItem {
   _id: string;
