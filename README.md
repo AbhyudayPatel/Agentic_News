@@ -1,4 +1,4 @@
-# Agentic_News
+# Agentic_News - https://agenticnews.vercel.app/
 
 ## Overview
 This project is an AI agentic news gather,summarisation and publishing website that scrapes news articles, summarizes them using Facebook's BART model, and displays them in a user-friendly UI built with Next.js. The backend scrapes data from news websites and stores it in MongoDB, ensuring continuous updates with automated scraping cycles.
